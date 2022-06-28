@@ -12,8 +12,8 @@ rm /usr/local/bin/wg
 rm /usr/local/bin/wireguard-go
 
 # remove old bits from new location
-rm /usr/sbin/netclient
-rm /usr/sbin/wg
+rm /usr/local/netclient/netclient
+rm /usr/local/netclient/wg
 
 # remove receipts
 rm /private/var/db/receipts/com.gravitl.pkg.NetclientWireguard.bom
