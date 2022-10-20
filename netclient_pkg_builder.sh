@@ -189,7 +189,7 @@ fi
 echo -----------------------------------------------------------
 echo call notarise script to upload, notarise and staple the .pkg
 echo -----------------------------------------------------------
-$BASEDIR/packages/Notarise.sh
+$BASEDIR/packages/notarise.sh
 if  [ $? -eq 0 ]
 then
      echo notarising netclient installer Succeeded
