@@ -1,11 +1,16 @@
 # netclient
-Here are the main files and what to do with them
 
 Requirements
-Runs on nacOS
-Must have 'go' v1.18 or later installed
-Requires 'jq' to parse json
-Must have Packages.app installed http://s.sudre.free.fr/Software/Packages/about.html
+
+Runs on macOS
+
+'go' v1.18 or later installed to build wireguard and wireguard-tools
+
+'jq' to parse json
+
+Packages.app to build the installer package http://s.sudre.free.fr/Software/Packages/about.html
+
+Here are the main files and what to do with them
 
 netclient_pkg_builder.sh
 
