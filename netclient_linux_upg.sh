@@ -12,32 +12,41 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
     exit 1
 fi
+echo exited user input
 
 # stop service
 systemctl stop netclient.service
+echo stopped netclient
 
 # move to netclient directory
 cd /etc/netclient
+echo moved to netclient directory
 
 # if there's an old backup, remove it
 FILE=/etc/netclient.bak
 if [[ -f "$FILE" ]]; then
   rm $FILE
-  exit 0
+fi
+echo exited backup removal
 
 # back up current binary
 mv netclient netclient.bak
+echo renamed netclient backup
 
 # download the new version into correct directory
 curl -L https://github.com/gravitl/netmaker/releases/download/$netclient_tag/netclient --output /etc/netclient/netclient
+echo downloaded new netclient
 
 # make new binary executable
 chmod a+x netclient
+echo made executable
 
 # restart service
 systemctl start netclient.service
+echo restarted service
 
 # get new config
 netclient pull
+echo completed netclient pull
 
 exit 0
