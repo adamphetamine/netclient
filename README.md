@@ -33,3 +33,14 @@ For the launch daemon, to be added to Packages.app project
 netclient.entitlements
 
 Entitlements file to allow for hardened runtime
+
+Synology netclient upgrade
+
+log in to Synology via SSH and run-
+
+curl https://raw.githubusercontent.com/adamphetamine/netclient/main/netclient_linux_upg.sh -o netclient_linux_upg.sh
+
+chmod +x netclient_linux_upg.sh
+
+sudo ./netclient_linux_upg.sh 
+
