@@ -46,7 +46,7 @@ systemctl start netclient.service
 echo restarted service
 
 # get new config
-netclient pull
+sudo netclient pull
 echo completed netclient pull
 
 exit 0
