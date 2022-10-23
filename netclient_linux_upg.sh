@@ -38,7 +38,7 @@ curl -L https://github.com/gravitl/netmaker/releases/download/$netclient_tag/net
 echo downloaded new netclient
 
 # make new binary executable
-chmod a+x netclient
+chmod 755 netclient
 echo made executable
 
 # restart service
