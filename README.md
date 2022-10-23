@@ -1,6 +1,6 @@
 # netclient
 
-This is an attempt to package netclient, wireguard-go and wireguard-tools into a single installer that runs on macOS. 
+This project will package netclient, wireguard-go and wireguard-tools into a single installer that runs on macOS. 
 
 ## Requirements
 
