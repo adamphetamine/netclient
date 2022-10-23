@@ -19,7 +19,7 @@ systemctl stop netclient.service
 echo stopped netclient
 
 # move to netclient directory
-cd /sbin/netclient
+cd /sbin
 echo moved to netclient directory
 
 # if there's an old backup, remove it
